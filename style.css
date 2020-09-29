@@ -1,3 +1,54 @@
-body {
-    overflow: hidden !important;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+/*.header {background-color: rgba(242,237,214,.5)}*/
+html {
+    scroll-behavior: smooth;
 }
+.nav-link {
+    /*font-family: 'Lato', sans-serif;*/
+}
+
+.carousel-item {
+    height: 60%;
+}
+
+.fab{color: #e47e4c;}
+.fas{margin: auto;}
+
+
+.visit {
+    background-color: lightgrey;
+    height: 30em;
+    margin-top: 15em;
+}
+.about{
+    background-color: #e47e4c;
+    height: 30em;
+    
+}
+.about-main {
+    font-family: 'Great Vibes', cursive; color:  white;  text-align: center;
+}
+.about-secondary{
+    font-family: 'Ledger', serif;
+    color: white;
+    text-align: center;
+}
+.contact {
+    
+}
+.big-text {
+    margin-top: 20em;
+}
+
+.carousel {
+    margin: auto !important;
+    padding-top: 4em;
+}
+
+
+.join-text{font-family: 'Great Vibes', cursive; color:  #e47e4c;  text-align: center;}
+
+.sundays-text{color: white;/*font-family: 'Roboto', sans-serif;*/font-family: 'Ledger', serif;}
