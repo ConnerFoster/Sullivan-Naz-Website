@@ -21,12 +21,11 @@ html {
 .visit {
     background-color: lightgrey;
     height: 20em;
-    margin-top: 15em;
 }
 .sermons{
     background-color: #e47e4c;
     height: 35em;
-    
+    margin-top: 7.5em;
 }
 .sermons-main {
     font-family: 'Great Vibes', cursive; color:  white;  text-align: center;
@@ -37,7 +36,9 @@ html {
     text-align: center;
 }
 .contact {
-    
+    margin-top: 7.5em;
+    height: 25em;
+    background-color: lightgrey;
 }
 
 .location {
@@ -48,14 +49,46 @@ html {
     justify-content: center;
 }
 .big-text {
-    margin-top: 20em;
+    margin-top: 7.5em;
 }
 
 .carousel {
     margin: auto !important;
     padding-top: 4em;
 }
+#visit-anchor {
+    margin-top: 2em;
+}
 
+.church-column {
+    margin-top: 3em !important;
+    text-align: center;
+    /*color: rgb(105, 105, 105);*/
+    color: white;
+    font-family: 'Ledger', serif;
+}
+
+p {
+    line-height: .3em;
+}
+
+footer {
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    background-color: #e47e4c;
+    height: 3em;
+    margin-top: 5em;
+}
+.footer-text {
+    
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .6em;
+}
 
 
 .join-text{font-family: 'Great Vibes', cursive; color:  #e47e4c;  text-align: center;}
