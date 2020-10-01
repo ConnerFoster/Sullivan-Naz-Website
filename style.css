@@ -56,7 +56,7 @@ html {
 
 .carousel {
     margin: auto !important;
-    padding-top: 4em;
+    padding-top: 3em;
 }
 #visit-anchor {
     margin-top: 2em;
@@ -71,7 +71,7 @@ html {
 }
 
 p {
-    line-height: .3em;
+    line-height: .4em;
 }
 
 footer {
@@ -91,9 +91,6 @@ footer {
     align-items: center;
     padding-top: .6em;
 }
-.carousel {
-    padding-top: 0;
-}
 
 .join-text{font-family: 'Great Vibes', cursive; color:  #e47e4c;  text-align: center;}
 
@@ -104,5 +101,13 @@ footer {
         width: 450px;
         height: 275px;
     }
+
+p {
+    line-height: .4em;
+    font-size: .7em;
+}
+.big-text{
+    margin-top: 0em;
+}
 }
 
