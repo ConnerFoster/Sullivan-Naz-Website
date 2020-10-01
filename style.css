@@ -12,6 +12,8 @@ html {
 
 .carousel-item {
     height: 65%;
+    width: 5em;
+    margin: auto;
 }
 
 .fab{color: grey /*#e47e4c*/;}
@@ -25,7 +27,7 @@ html {
 .sermons{
     background-color: #e47e4c;
     height: 35em;
-    margin-top: 7.5em;
+    margin-top: 1em;
 }
 .sermons-main {
     font-family: 'Great Vibes', cursive; color:  white;  text-align: center;
@@ -36,7 +38,7 @@ html {
     text-align: center;
 }
 .contact {
-    margin-top: 7.5em;
+    margin-top: 1em;
     height: 25em;
     background-color: lightgrey;
 }
@@ -49,7 +51,7 @@ html {
     justify-content: center;
 }
 .big-text {
-    margin-top: 7.5em;
+    margin-top: 0em;
 }
 
 .carousel {
@@ -78,7 +80,7 @@ footer {
     align-items: center;*/
     background-color: #e47e4c;
     height: 3em;
-    margin-top: 5em;
+    /*margin-top: 5em;*/
 }
 .footer-text {
     
@@ -94,3 +96,11 @@ footer {
 .join-text{font-family: 'Great Vibes', cursive; color:  #e47e4c;  text-align: center;}
 
 .sundays-text{color: white;/*font-family: 'Roboto', sans-serif;*/font-family: 'Ledger', serif;}
+
+@media only screen and (max-width: 600px) {
+    iframe{
+        width: 450px;
+        height: 275px;
+    }
+}
+
