@@ -91,7 +91,9 @@ footer {
     align-items: center;
     padding-top: .6em;
 }
-
+.carousel {
+    padding-top: 0;
+}
 
 .join-text{font-family: 'Great Vibes', cursive; color:  #e47e4c;  text-align: center;}
 
