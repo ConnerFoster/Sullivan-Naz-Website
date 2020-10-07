@@ -1,113 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
-/*.header {background-color: rgba(242,237,214,.5)}*/
-html {
-    scroll-behavior: smooth;
-}
-.nav-link {
-    /*font-family: 'Lato', sans-serif;*/
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-.carousel-item {
-    height: 65%;
-    width: 5em;
-    margin: auto;
+#church-logo {
+    width: 18em;
+    margin-left: 8em;
 }
-
-.fab{color: grey /*#e47e4c*/;}
-.fas{margin: auto;}
-
-
-.visit {
-    background-color: lightgrey;
-    height: 20em;
-}
-.sermons{
-    background-color: #e47e4c;
-    height: 35em;
-    margin-top: 1em;
-}
-.sermons-main {
-    font-family: 'Great Vibes', cursive; color:  white;  text-align: center;
-}
-.sermons-secondary{
-    font-family: 'Ledger', serif;
-    color: white;
-    text-align: center;
-}
-.contact {
-    margin-top: 1em;
-    height: 25em;
-    background-color: lightgrey;
-}
-
-.location {
-    margin: auto;
-}
-.location-flex {
-    display:flex;
-    justify-content: center;
-}
-.big-text {
-    margin-top: 0em;
-}
-
-.carousel {
-    margin: auto !important;
-    padding-top: 3em;
-}
-#visit-anchor {
-    margin-top: 2em;
-}
-
-.church-column {
-    margin-top: 3em !important;
-    text-align: center;
-    /*color: rgb(105, 105, 105);*/
-    color: white;
-    font-family: 'Ledger', serif;
-}
-
-p {
-    line-height: .4em;
-}
-
-footer {
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
-    background-color: #e47e4c;
-    height: 3em;
-    /*margin-top: 5em;*/
-}
-.footer-text {
-    
-}
-.footer-content {
+/*.church-logo {
+    margin-left: 8em;
+}*/
+.header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: .6em;
+    align-content: center;
+    margin-top: 1em;
+}
+.navbar {
+    display: flex;
+    list-style-type: none;
+    margin-right: 8em;
+    margin-top: 3em;
+}
+#hamburger-icon {
+    display: none !important;
 }
 
-.join-text{font-family: 'Great Vibes', cursive; color:  #e47e4c;  text-align: center;}
+li {
+    padding: .5em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: grey;
+}
+.first-section {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+.section1-content{
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    margin-top: 6em;
+    text-align: left;
+}
+.section1-sec {
+    font-family: 'Lato', sans-serif;
+}
+.main-pics {
+    width: 40em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+.section1-head {
+    color: #e49c3f
+}
+.section1-location{
+    display: flex;
+    margin: 0;
+}
+.section1-phone {
+    margin: 0;
+}
+.location-content {
+    margin: .1em;
+}
+.phone-content{
+    margin: .1em;
+    
+}
+.email-content{
+    margin: .1em;
+    
+}
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+h4 {
+    padding-top: .4em;
+}
 
-.sundays-text{color: white;/*font-family: 'Roboto', sans-serif;*/font-family: 'Ledger', serif;}
 
-@media only screen and (max-width: 600px) {
-    iframe{
-        width: 450px;
-        height: 275px;
+.main-pics {
+    display: none;
+}
+/*.images {
+    width: 100%;
+}*/
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .first-section h1 {
+    font-size: 4em;
+  }
+  .first-section h1 {
+    font-size: 4em;
+  }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        display: block;
+        margin:auto;
+    }
+    #church-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+    }
+    .navbar {
+        display: none;
+    }
+    .main-pics {
+        width: 20em;
+        margin: auto;
+    }
+    .first-section {
+        display: block;
+    }
+    .section1-content{
+        text-align: center;
+    }
+    .location-content {
+        margin: auto;
+    }
     }
 
-p {
-    line-height: .4em;
-    font-size: .7em;
-}
-.big-text{
-    margin-top: 0em;
-}
-}
+    @media (min-width : 768px) 
+    and (max-width : 1024px) {
+        .main-pics {
+            width: 30em;
+            /*margin: auto;*/
+        }
+        .first-section {
+            transform: scale(.85);
+            margin-top: 0;
+        }
+        .first-section h1 {
+            font-size: 2em;
+        }
+        .section1-content {
+            font-family: 'Raleway', sans-serif;
+            color: grey;
+            margin-top: 0;
+            text-align: left;
+        }
+        .main-pics {
+            margin-right: 3rem;
+        }
+    }
 
+    @media (min-width : 1024px) 
+    and (max-width : 1280px) {
+        .first-section {
+            transform: scale(.85);
+            margin-top: 0;
+        }
+        .main-pics {
+            margin-right: 5rem;
+            transform: scale(.75);
+            margin-right: 1rem;
+        }
+    }
+
+    @media (min-width : 1280px) 
+    and (max-width : 1920px) {
+        .first-section {
+            transform: scale(.85);
+            margin-top: 0;
+        }
+    }
