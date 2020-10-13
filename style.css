@@ -43,7 +43,7 @@ li {
     text-align: left;
 }
 .section1-content h4 {
-    color: darkred;
+    /*color: darkred;*/
 }
 .section1-sec {
     font-family: 'Lato', sans-serif;
@@ -54,7 +54,8 @@ li {
     margin-right: 10em;
 }
 .section1-head {
-    color: #e49c3f
+    /*color: #e49c3f*/
+    color: rgb(223, 129, 7);
 }
 .section1-location{
     display: flex;
