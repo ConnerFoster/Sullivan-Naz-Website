@@ -1,4 +1,6 @@
 const photos = document.querySelectorAll(".main-pics")
+const section2Divs = document.querySelectorAll(".image-cards")
+const middle = document.querySelector(".middle")
 
 
 
@@ -22,6 +24,16 @@ function displayPhoto() {
 }
 
 iteratePhoto()
+
+/*section2Divs.forEach(div => div.addEventListener("mouseover", ()=> {
+    div.style.opacity= ".3"
+    middle.style.opacity = "1"
+}))
+
+section2Divs.forEach(div => div.addEventListener("mouseout", ()=> {
+    div.style.opacity= "1"
+}))*/
+
 
 
 

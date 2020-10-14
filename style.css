@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-html { font-size:100%; } 
+html { font-size:100%; }
+
 
 #church-logo {
     width: 18em;
@@ -14,8 +16,12 @@ html { font-size:100%; }
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin-top: 1em;
+    /*margin-top: 1em;*/
+    background-color: white;
+    /*border-bottom: 1px solid #ebeaeb;*/
+    
 }
+
 .navbar {
     display: flex;
     list-style-type: none;
@@ -31,14 +37,14 @@ li {
     color: grey;
 }
 .first-section {
-    margin-top: 5em;
+    padding-top: 5em;
     display: flex;
     justify-content: center;
     padding-bottom: 15rem;
 }
 .section1-content{
     font-family: 'Raleway', sans-serif;
-    color: grey;
+    color: rgb(131, 130, 130);
     margin-top: 6em;
     text-align: left;
 }
@@ -90,7 +96,100 @@ h4 {
 /*.images {
     width: 100%;
 }*/
+.section2 {
+    position: relative;
+}
+.bible-verse {
+    background:rgb(230, 152, 51);
+    border: 6px solid white;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 1%;
+    position: absolute;
+    left: 50%;
+    margin-left: -10rem;
+    z-index: 2;
+}
+.bv-text {
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+.section2-main {
+    background: rgb(231, 231, 231);
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 15rem;
+    width: 100%;
+    height: 80rem;
+    font-family: 'Lato', sans-serif;
+}
+.pics-menu {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+}
+.image-cards {
+    width: 20rem;
+    height: 26rem;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin: 3rem;
+    transition: .5s ease-out;
+    backface-visibility: hidden;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    /*position: relative;*/
+}
+.image-card1 {
+    background-image: url(pastor-sermons.jpg);
+}
+.image-card2 {
+    background-image: url(activity.jpg);
+}
+.image-card3 {
+    background-image: url(visit.jpg);
+}
+.cards-content {
+    text-align: center;
+    padding-top: 50%;
+    opacity: 0;
+    z-index: 3;
+    transition: .5s ease;
+}
+.image-cards:hover .cards-content {
+    opacity: 1;
+}
 
+.image-card1:hover {
+    background-image: url(pastor-sermons.jpg);
+    background-color: rgba(245, 238, 238, 0.6);
+    background-blend-mode: lighten;
+    transition: ease .5s;
+}
+.image-card2:hover {
+    background-image: url(activity.jpg);
+    background-color: rgba(245, 238, 238, 0.6);
+    background-blend-mode: lighten;
+}
+.image-card3:hover {
+    background-image: url(visit.jpg);
+    background-color: rgba(245, 238, 238, 0.6);
+    background-blend-mode: lighten;
+}
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 5em;
+    height: 2em;
+}
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 3s;
